@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="game.css">
+    <title>Skies Of Arcanea</title>
+    <link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/previews/014/296/082/original/fighter-air-plane-in-flat-design-png.png">
+</head>
+<body>
+    <div id="winning-msg">
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star sec"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="cc">Congratulations</p>
+        <p class="ck">You Won</p>
+        <button id="wb">Press "R" to Play Again</button>
+    </div>
+    <div id="losing-msg">
+        <p class="cc">This close to Winning</p>
+        <button id="lb">Press "R" to Play Again</button>
+    </div>
+    <button id="music-play"><i class="fa-solid fa-play"></i></button>
+    <button id="music-pause"><i class="fa-solid fa-pause"></i></button>
+    <audio src="/srcs/bgmusic.mp3" autoplay loop></audio>
+    <img src="/srcs/jets.png" alt="" id="jets">
+    <img src="/srcs/player.png" alt="" srcset="" id="player">
+    <img src="/srcs/enemy.png" alt="" id="enemy">
+    <img src="/srcs/projectile.png" alt="" id="projectile">
+    <img src="/srcs/lives.png" alt="" id="live">
+    <img src="/srcs/bullet.png" alt="" id="bullet">
+    <img src="/srcs/smoke.png" alt="" id="smoke">
+    <div id="score">
+        <p>Score :</p>
+        <p id="Livescore"></p>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
